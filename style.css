@@ -1,0 +1,15 @@
+h1:hover {
+  color: red;
+}
+
+p:hover {
+  color: green;
+}
+
+div:hover p {
+  color: blue;
+}
+
+div:hover {
+  border: 1px solid black;
+}
