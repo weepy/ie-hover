@@ -6,31 +6,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 	<title>weepy/ie-hover @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #b4d6a4;
-		  font-family: "Helvetica,Arial,FreeSans"; 
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #4b295b; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #4b295b; }
-    h3 { text-align: center; color: #4b295b; }
-    a { color: #4b295b; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
+	<link href='style.css' media="screen" rel="stylesheet" type="text/css"  />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  
+  
+  
 </head>
 
 <body>
@@ -51,25 +32,26 @@
     <div class="description">
       Bringing :hover to IE Stylesheets with jQuery
     </div>
+    <p>This very lightweight jQuery plugin adds in support for IE :hover selectors in CSS </p>
+    
+    <h2>Use</h2>
+    <p>Include the script and after your last stylesheet, use the following javascript <code>$.fixIEHover()</code></p>
+    <p>Better to avoid a document.ready event here as it's unnecessary. It works by looping through the stylesheet rules, looking for :hover classes and adding equivalent IE friendly classes along with events for mouse in/out with jQuery  </p>
+  
+    
+    <h2>Demo</h2>
+    <p>Click <a href='demo.html'>here</a> for a demo</p>
+    <h2>License</h2>
+    <p>MIT</p>
 
-    <p>Main Project Text</p><h2>Dependencies</h2>
-<p>Dependencies</p>
-<h2>Install</h2>
-<p>Installation Instructions</p>
-<h2>License</h2>
-<p>Code License</p>
-<h2>Authors</h2>
-<p>weepy (jonahfox@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>weepy (jonahfox@gmail.com)<br/>      </p>
+    <h2>Contact</h2>
+    <p>weepy (jonahfox@gmail.com)
+    <br/>      </p>
 
 
     <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/weepy/ie-hover/zipball/master">zip</a> or
-      <a href="http://github.com/weepy/ie-hover/tarball/master">tar</a> formats.
-    </p>
+    <p>Script is <a href='http://github.com/weepy/ie-hover/raw/master/jquery.ie_hover.js'>here</a></p>
+
     <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
       <pre>$ git clone git://github.com/weepy/ie-hover</pre>
